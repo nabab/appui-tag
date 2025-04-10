@@ -1,0 +1,9 @@
+# Logs
+logs
+*.log
+.history
+.vscode
+.idea/
+_DS_STORE*
+.DS_Store
+._.DS_Store
