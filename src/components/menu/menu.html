@@ -1,5 +1,5 @@
 <span class="appui-tag-menu bbn-iblock">
-  <bbn-context :source="tags"
+  <bbn-context :source="listSource"
                :context="false"
                mode="selection"
                ref="context"
@@ -8,7 +8,9 @@
                class="bbn-iblock bbn-p"
                source-action="action">
     <div class="bbn-button bbn-button-icon-only">
-      <i class="nf nf-md-tag"/>
+      <span class="bbn-overlay bbn-middle">
+        <i class="nf nf-md-tag"/>
+      </span>
     </div>
   </bbn-context>
 </span>
