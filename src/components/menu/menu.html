@@ -1,0 +1,14 @@
+<span class="appui-tag-menu bbn-iblock">
+  <bbn-context :source="tags"
+               :context="false"
+               mode="selection"
+               ref="context"
+               :render="renderElement"
+               @select="selectTag"
+               class="bbn-iblock bbn-p"
+               source-action="action">
+    <div class="bbn-button bbn-button-icon-only">
+      <i class="nf nf-md-tag"/>
+    </div>
+  </bbn-context>
+</span>
