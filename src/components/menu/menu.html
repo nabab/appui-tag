@@ -1,8 +1,12 @@
 <span class="appui-tag-menu bbn-iblock">
-  <bbn-context :context="false"
+  <bbn-context :source="listSource"
+               :context="false"
+               mode="selection"
                ref="context"
+               :render="renderElement"
+               @select="selectTag"
                class="bbn-iblock bbn-p"
-               :component="$options.components.tags">
+               source-action="action">
     <div class="bbn-button bbn-button-icon-only">
       <span class="bbn-overlay bbn-middle">
         <i class="nf nf-md-tag"/>
